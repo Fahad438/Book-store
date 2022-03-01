@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Book</title>
+    <meta name="description" content="Online  Book Store eBooks Library">
+    <meta name="keywords" content="book, ebook, free, download, library, lib, books, ebooks, read, online, pdf">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="scripts/script.js"></script>
+
+</head>
+
+<body>
+    <img src="images/books-header.jpg" class="headerimage" alt="header">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="add_book.html">Add Book</a></li>
+        <li><a href="add_review_for_a_book.html">Add Review</a></li>
+    </ul>
+
+    <div class="container">
+
+
+        <form method='post' name="#" onsubmit="return checkBookForm()">
+            <div>
+                <label>Book Name:</label> <input type='text' name='name' id='name' onblur="checkName()" /> <span
+                    id="errname"> </span><br />
+            </div>
+            <div>
+                <label>Author:</label> <input type='text' name='author' id='author' onblur="checkAuthor()" /><span
+                    id="errauthor"></span><br />
+            </div>
+            <div>
+                <label>ISBN:</label> <input type='text' name='isbn' id='isbn' onblur="checkIsbn()" /><span
+                    id="errisbn"></span><br />
+            </div>
+            <div>
+                <label>Publisher: </label> <input type='text' name='publisher' id='publisher'
+                    onblur="checkPublisher()" /> <span id="errpublisher"> </span> <br />
+            </div>
+            <div>
+                <label>Language: </label>
+                <select name="language" id="language" onchange="checkLanguage()">
+                    <option value="select">Select Language </option>
+                    <option value="English"> English </option>
+                    <option value="Arabic"> Arabic </option>
+                    <option value="French"> French </option>
+                    <option value="Italian"> Italian </option>
+                </select><span id="errlanguage"> </span> <br />
+            </div>
+            <div>
+                <label>Category: </label>
+                <select name="category" id="category" onchange="checkCategory()">
+                    <option value="select">Select Category </option>
+                    <option value="Art"> Art </option>
+                    <option value="Cooking"> Cooking </option>
+                    <option value="Science"> Science </option>
+                    <option value="Children"> Children </option>
+                </select><span id="errcategory"> </span> <br />
+            </div>
+            <div>
+                <label>Edition: </label> <input type='text' name='edition' id='edition' onblur="checkEdition()" /> <span
+                    id="erredition"> </span> <br />
+            </div>
+            <div>
+                <label>Year: </label> <input type='text' name='year' id='year' onblur="checkYear()" /> <span
+                    id="erryear"> </span> <br />
+            </div>
+            <div>
+                <label>Number of pages: </label> <input type='text' name='pages' id='pages' onblur="checkPages()" />
+                <span id="errpages"> </span> <br />
+            </div>
+            <div>
+                <label>Book description: </label> <textarea name='description' id='description'
+                    onblur="checkDescription()"></textarea><br>
+                <span id="errdescription"> </span>
+            </div>
+            <input type="submit" class="btn" value="Submit" />
+        </form>
+
+    </div>
+    <div class="footer">
+        <div> All Rights Reserved &copy; Book Store</div>
+
+    </div>
+</body>
+
+</html>

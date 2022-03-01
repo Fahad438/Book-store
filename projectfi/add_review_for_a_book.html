@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Add Review</title>
+        <meta name="description" content="Online  Book Store eBooks Library">
+        <meta name="keywords" content="book, ebook, free, download, library, lib, books, ebooks, read, online, pdf">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="scripts/script.js"></script>
+
+    </head>
+    <body>
+  <img src="images/books-header.jpg"  class="headerimage" alt="header">
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a   href="add_book.html">Add Book</a></li>
+                <li><a  class="active" href="add_review_for_a_book.html">Add Review</a></li>
+            </ul>
+
+        <div class="container">
+          
+            <form method='post' name="#"  onsubmit="return checkReviewForm()"  >
+                <div>
+                    <label>Book Name:</label> <input type='text' name='name' id='name' onblur ="checkName()" /> <span id="errname" > </span><br/> 
+                </div>
+                <div>
+                    <label>Edition: </label>  <input type='text' name='edition' id='edition' onblur ="checkEdition()"  /> <span id="erredition" > </span> <br/>
+                </div>
+                <div>
+                    <label>Reviewer:</label>   <input type='text' name='reviewer' id='reviewer' onblur ="checkReviewer()" /><span id="errreviewer"></span><br/>
+                </div>
+                <div> 
+                    <label>Email:</label> <input type='text' name='email' id='email'  onblur ="checkEmail()" /><span id="erremail"></span><br/> 
+                </div>
+
+                <div>
+                    <label>Review rating: </label> 
+                    <select name="rate" id="rate" onchange="checkRate()">
+                        <option value="select">Please select the review rating… </option>
+                        <option value="1"> 1   </option> 
+                        <option value="2"> 2 </option> 
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                    </select><span id="errrate" > </span> <br/> 
+                </div>
+
+
+                <div>
+                    <label>Review description: </label>
+                    <textarea name='description' id='description' onblur ="checkDescription()"></textarea><br> 
+                    <span id="errdescription" > </span> 
+                </div>
+                <input type="submit"  class="btn"  value="Submit" />
+            </form>
+           
+        </div>
+ <div class="footer">
+                <div> All Rights Reserved  &copy; Book Store</div>
+
+            </div>
+    </body>
+</html>
