@@ -32,9 +32,7 @@ Add review
 
 
 
-
-![screencapture-file-C-Users-fahad-AppData-Local-Temp-Rar-EXa20452-18408-projectai-AboutSchool-html-2022-03-01-04_43_07](https://user-images.githubusercontent.com/86566999/156091584-29106f1c-f176-41d2-a2bc-17f80053f032.png)
-
+![screencapture-file-C-Users-fahad-Dropbox-1442-1442-projectfi-add-book-html-2022-03-01-05_10_32](https://user-images.githubusercontent.com/86566999/156091842-39a4b531-2315-4ae8-b910-7d878079f441.png)
 
 
 
